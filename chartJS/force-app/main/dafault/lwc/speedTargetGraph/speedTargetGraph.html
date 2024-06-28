@@ -1,0 +1,76 @@
+<template>
+    <lightning-card class="headbody">   
+        <div class="header">
+            <label for="voptions">Sales Dep :</label><br><br>
+            <select class="saldept" name="saldept" id="saldept">
+                <template for:each={saldepts} for:item="saldept">
+                    <option key={saldept} class="header__item" value={saldept.Id}>{saldept.Name}</option>
+                </template>
+            </select>
+        </div>
+        <div class="header">
+            <label for="voptions">Quality Options :</label><br><br>
+            <select class="voptions" name="voptions" id="voptions">
+                <option class="header__item" value="1.Kalite">1.Kalite</option>
+                <option class="header__item" value="2.Kalite">2.Kalite</option>
+                <option class="header__item" value="%" selected>All Voptions</option>
+            </select>
+        </div>
+        <div class="header">
+            <label for="voptions1">Month :</label><br><br>
+            <select class="month" name="month" id="month">
+                <option class="header__item" value="0" selected>All</option>
+                <option class="header__item" value="-1">Q1</option>
+                <option class="header__item" value="-2">Q2</option>
+                <option class="header__item" value="-3">Q3</option>
+                <option class="header__item" value="-4">Q4</option>
+                <option class="header__item" value="01">JAN</option>
+                <option class="header__item" value="02">FEB</option>
+                <option class="header__item" value="03">MAR</option>
+                <option class="header__item" value="04">APR</option>
+                <option class="header__item" value="05">MAY</option>
+                <option class="header__item" value="06">JUN</option>  
+                <option class="header__item" value="07">JUL</option>
+                <option class="header__item" value="08">AUG</option>
+                <option class="header__item" value="09">SEP</option>
+                <option class="header__item" value="10">OCT</option>
+                <option class="header__item" value="11">NOV</option>
+                <option class="header__item" value="12">DEC</option>
+            </select>
+        </div>
+        <div class="header">
+            <label for="voptions2">Year :</label><br><br>
+            <select class="year" name="year" id="year">
+                <template for:each={years} for:item="year">
+                    <option key={year} class="header__item" value={year} selected>{year}</option>
+                </template>
+            </select>
+        </div>
+        <div class="header__button">
+            <input class="header__button--input" type="button" value="search" onclick={handleClick}>
+        </div>
+        <div class="clearfix"></div>
+        <br><br><br><br>
+        <div class="slds-m-around_medium">
+            <canvas class="chart1" lwc:dom="manual"></canvas>
+            <br><br>
+            <label class="body__item"><span style="color:red">Actual Amount TL: </span> ₺{Actual_Amount_TL}</label><br><br>
+            <label class="body__item"><span style="color:red">Target Amount TL: </span> ₺{Target_Amount_TL}</label><br><br>
+            <label class="body__item"><span style="color:red">Percentage: </span> {chart1oran}%</label><br>
+        </div>
+        <div class="slds-m-around_medium">
+            <canvas class="chart2" lwc:dom="manual"></canvas>
+            <br><br>
+            <label class="body__item"><span style="color:red">Actual Amount EUR: </span> €{Actual_Amount_EUR}</label><br><br>
+            <label class="body__item"><span style="color:red">Target Amount EUR: </span> €{Target_Amount_EUR}</label><br><br>
+            <label class="body__item"><span style="color:red">Percentage: </span> {chart2oran}%</label><br>
+        </div>
+        <div class="slds-m-around_medium">
+            <canvas class="chart3" lwc:dom="manual"></canvas>
+            <br><br>
+            <label class="body__item"><span style="color:red">Actual Quantity: </span> {Actual_Quantity}</label><br><br>
+            <label class="body__item"><span style="color:red">Target Quantity: </span> {Target_Quantity}</label><br><br>
+            <label class="body__item"><span style="color:red">Percentage: </span> {chart3oran}%</label><br>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,68 @@
+.headbody{
+    height: 5%;
+}
+
+.slds-m-around_medium{
+    width: 360px;
+    height: 360px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.span__span{
+    float:right;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
+.chart1 {
+    pointer-events: none;
+}
+
+.chart2 {
+    pointer-events: none;
+}
+
+.chart3 {
+    pointer-events: none;
+}
+
+.header{
+    padding-left: 4%;
+    padding-top: 1%;
+    height: 75px;
+    float: left;
+}
+
+.header__button{
+    height: 75px;
+    width: 200px;
+    padding-top: 40px;
+    padding-left : 50px;
+    float: left;
+}
+
+.header__button--input{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10%;
+}
+
+select{
+    height: 32px;
+    width: 200px;
+    border: 1px solid #747474;
+    padding: 0 32px 0 12px;
+    min-height: 32px;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.body__item{
+    padding-left: 12%;
+}
+
+.clearfix{
+    clear: both;
+ }
