@@ -143,7 +143,7 @@ public class WSInvoicesAll_Test {
             '"Invoice_Code" : "INVOICE100000921",' +
             '"Invoice_Document_Type" : "INVOICE1",' +
             '"Invoice_Document_Number" : "00000921",' +
-            '"Country" : "United Kingdom",' +
+            '"Country" : "France",' +
             '"Exchange_Rate_Information" : "1.0",' +
             '"External_Invoice_Number" : "XXXRTYESSFFG788867",' +
             '"Grand_Total" : 25443.22,' +
