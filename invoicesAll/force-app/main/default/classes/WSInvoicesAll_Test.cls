@@ -30,7 +30,7 @@ public class WSInvoicesAll_Test {
 
         Account acc2 = new Account();
         acc2.Name = 'Test Partner';
-        acc2.CurrencyIsoCode = 'TRY';
+        acc2.CurrencyIsoCode = 'USD';
         acc2.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Partner').getRecordTypeId();
         acc2.C_Customer__c = 'M211002';
         acc2.BillingCity = 'Hawaii';
