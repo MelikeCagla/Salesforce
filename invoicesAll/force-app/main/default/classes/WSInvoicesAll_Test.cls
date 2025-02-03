@@ -36,7 +36,7 @@ public class WSInvoicesAll_Test {
         acc2.BillingCity = 'Hawaii';
         insert acc2; 
         
-         // DUMMY ORDERS
+         // DUMMY INVOICES
         Invoice__c inv1 = new Invoice__c();
         inv1.C_Code__c = 'INVOICE200072246';
         inv1.External_Invoice_Number__c = '45637463INVOICE1';
@@ -47,7 +47,8 @@ public class WSInvoicesAll_Test {
         inv2.External_Invoice_Number__c = '45637463INVOICE2';
         inv2.Partner_Name__c = acc2.Id;
         insert inv2;
-        // DUMMY ORDERITEMS
+
+        // DUMMY INVOICEITEMS
         Invoice_Item__c otm21 = new Invoice_Item__c();
         otm21.InvoiceId__c = inv2.Id;
         otm21.ProductName__c = pr1.Id;
