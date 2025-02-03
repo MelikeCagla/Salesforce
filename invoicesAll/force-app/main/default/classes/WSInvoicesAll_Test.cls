@@ -142,7 +142,7 @@ public class WSInvoicesAll_Test {
             '"Invoice_Code" : "INVOICE100000921",' +
             '"Invoice_Document_Type" : "INVOICE1",' +
             '"Invoice_Document_Number" : "00000921",' +
-            '"Country" : "TÜRKİYE",' +
+            '"Country" : "United Kingdom",' +
             '"Exchange_Rate_Information" : "1.0",' +
             '"External_Invoice_Number" : "XXXRTYESSFFG788867",' +
             '"Grand_Total" : 25443.22,' +
@@ -151,17 +151,10 @@ public class WSInvoicesAll_Test {
             '"CurrencyIsoCode" : "EUR",' +
             '"Partner_Code" : "Partner_Code",' +
             '"Partner_Name" : "{}",' +
-            '"Total_Discount" : 0.0,' +
-            '"Total_Gross_Total" : 21202.68,' +
-            '"Total_Invoice_Quantity" : 1.0,' +
-            '"Total_Net_Total" : 21202.68,' +
             '"DeletedSF" : false,' +
             '"InvoiceItems": [' +
             '  {' +
             '	"GrandTotal":25443.22,' +
-            '	"GrandTotal_TL":25443.22,' +
-            '	"List_Price":21202.68,' +
-            '	"Net_Price":21202.68,' +
             '	"CurrencyIsoCode":"EUR",' +
             '	"ProductCode": "TTTT78954RR",' +
             '	"ProductName": "Technical Service Product",' +
