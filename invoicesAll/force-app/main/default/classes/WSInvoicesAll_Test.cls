@@ -160,7 +160,6 @@ public class WSInvoicesAll_Test {
             '	"ProductName": "Technical Service Product",' +
             '	"Quantity":1.0,' +
             '	"Reference_Order_Number": "OX-XXXXXXXX",' +
-            '	"SubTotal": 21202.68,' +
             '	"Unit":"AD",' +
             '	"VAT_Amount": 4240.54,' +
             '	"Voption": "1. Kalite"' +
