@@ -162,8 +162,7 @@ public class WSInvoicesAll_Test {
             '	"Quantity":1.0,' +
             '	"Reference_Order_Number": "OX-XXXXXXXX",' +
             '	"Unit":"AD",' +
-            '	"VAT_Amount": 4240.54,' +
-            '	"Voption": "1. Kalite"' +
+            '	"VAT_Amount": 4240.54' +
             '  }' +
             ']' +
             '}]';
