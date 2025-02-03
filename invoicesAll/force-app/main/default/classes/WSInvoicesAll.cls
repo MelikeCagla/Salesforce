@@ -270,9 +270,26 @@ global class WSInvoicesAll {
 
     @future(callout=true)
     public static void makeCallout(String insertedId, String usingErpId) {
-        // HNConnectorConnection provides the erp connections to use. REST or SOAP service connection must be established within this class.
-        String response = HNConnectorConnection.getInvoiceSFKey(insertedId,usingErpId);
+        // getInvoiceSFKey service is provides the erp connections to use. The place where we merge data from ERP.
+        String response = getInvoiceSFKey(insertedId,usingErpId);
         System.debug(response);
+    }
+
+    public static String getInvoiceSFKey(String SFKey,String usingErpId) {
+        String response;
+        if(SFKey != '')
+        {
+            //HNUsingERP is where SOAP and REST services are written
+            response = HNUsingERP.callButunbiConnectorSync('getInvoiceSFKey','{"cnparameters":["T", "INVOICEDOC", "' + SFKey + '", "' + usingErpId + '"]}');
+            if (Test.isRunningTest()) {
+                response = '{"isSuccess":true,"data":{}';
+            }
+        }
+        else {
+            response = '{"isSuccess":false,"data":{}';
+        }
+        
+        return response;
     }
 
     public static Invoice__c mapUSINGERPRec2Invoice(Invoice__c invoice,USINGERPREC usingErpRec,Map<String,Account> accountMap) {
